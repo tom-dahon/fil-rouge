@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">sky-rental</string>
+    <string-array name="checkin_array">
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>Next Week</item>
+    </string-array>
+
+    <string-array name="checkout_array">
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>Next Week</item>
+    </string-array>
+
 </resources>

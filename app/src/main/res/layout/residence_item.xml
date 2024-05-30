@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/residenceImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/residenceNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Residence Name"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/residenceLocationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="#AAA"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/residenceRatingsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.8"
+        android:textColor="#FFD700"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/residenceNumReviewsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(68 reviews)"
+        android:textColor="#AAA"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>
