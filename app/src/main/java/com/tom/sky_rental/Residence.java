@@ -1,6 +1,9 @@
 package com.tom.sky_rental;
 
-public class Residence {
+import java.io.Serializable;
+
+public class Residence implements Serializable {
+    private String id;
     private String name;
     private String location;
     private String image_url;
@@ -10,10 +13,10 @@ public class Residence {
     private String check_in;
     private String check_out;
 
-    // Constructeur sans argument requis pour Firestore
     public Residence() {}
 
-    public Residence(String name, String location, String image_url, float ratings, int num_reviews, int rooms, String check_in, String check_out) {
+    public Residence(String id, String name, String location, String image_url, float ratings, int num_reviews, int rooms, String check_in, String check_out) {
+        this.id = id;
         this.name = name;
         this.location = location;
         this.image_url = image_url;
@@ -25,6 +28,10 @@ public class Residence {
     }
 
     // Getters et setters
+
+    public String getId() {
+        return id;
+    }
     public String getName() {
         return name;
     }
@@ -87,5 +94,9 @@ public class Residence {
 
     public void setCheckOut(String check_out) {
         this.check_out = check_out;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

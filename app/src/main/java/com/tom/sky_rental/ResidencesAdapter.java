@@ -1,6 +1,7 @@
 package com.tom.sky_rental;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,14 @@ public class ResidencesAdapter extends RecyclerView.Adapter<ResidencesAdapter.Re
         Glide.with(context)
                 .load(residence.getImageUrl())
                 .into(holder.imageView);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, DetailsActivity.class);
+                intent.putExtra("RESIDENCE", residence);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
